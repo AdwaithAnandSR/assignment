@@ -1,3 +1,13 @@
+
+@media (max-width: 767px) {
+  body {
+
+    background: red;
+  }
+
+}
+
+
 * {
     padding: 0;
     margin: 0;
