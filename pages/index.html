@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hotel | Home</title>
+        <link rel="stylesheet" href="../style.css" />
+        <style>
+            body {
+                background-image: url("../images/img1.jpeg");
+                background-repeat: no-repeat;
+                background-position: top;
+                color: #593115;
+            }
+            #welcome {
+                font-size: 4rem;
+                color: #6e6e6e;
+                background: linear-gradient(#0dc176, #e45822, #c10d90);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 2vh 0;
+            }
+            p {
+                color: white;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            button {
+                background: #fa511e;
+                font-size: 1.2rem;
+                margin: 0;
+            }
+            button:hover {
+                opacity: 0.9;
+                scale: 1.03;
+            }
+            footer {
+                padding: 0 5vw;
+                gap: 3vw;
+                display: flex;
+                white-space: nowrap;
+                overflow-x: auto;
+                margin-top: 3vh;
+            }
+            #box {
+                width: 200px;
+                height: 30vh;
+                border-radius: 23px;
+                border: 1px solid white;
+                display: inline-block;
+                flex: 0 0 auto;
+                padding: 3vw;
+                overflow: hidden;
+                background: linear-gradient(
+                    to bottom right,
+                    #121212,
+                   #242424,
+                    #0d0d0d,
+                    #2f2f2f
+                );
+            }
+            #box h1,
+            #box span {
+                text-align: center;
+                color: white;
+                white-space: normal;
+                margin: 1vh 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1>
+                <a href="index.html">Home</a>
+            </h1>
+            <h1>
+                <a href="rooms.html">Rooms</a>
+            </h1>
+            <h1>
+                <a href="gallery.html">Gallery</a>
+            </h1>
+            <h1>
+                <a href="contact.html">Contact</a>
+            </h1>
+        </nav>
+        <main>
+            <h1>Hey <span id="name"></span>💝</h1>
+            <h1 id="welcome">Welcome to BlueOcean Hotel</h1>
+            <p>Your luxury stay starts here.</p>
+            <div
+                style="
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    gap: 10vw;
+                "
+            >
+                <a href="../pages/rooms.html">
+                    <button type="button">Book Room</button>
+                </a>
+                <a>
+                    <button onclick="logout()" type="button">Log out</button>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div id="box">
+                <h1>Heading</h1>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi est id quam architecto, fugit nulla ex amet magnam
+                    necessitatibus, eos atque fuga quae ab unde neque cupiditate
+                </span>
+            </div>
+            <div id="box">
+                <h1>Heading</h1>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi est id quam architecto, fugit nulla ex amet magnam
+                    necessitatibus, eos atque fuga quae ab unde neque cupiditate
+                </span>
+            </div>
+            <div id="box">
+                <h1>Heading</h1>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi est id quam architecto, fugit nulla ex amet magnam
+                    necessitatibus, eos atque fuga quae ab unde neque cupiditate
+                </span>
+            </div>
+        </footer>
+        <script type="text/javascript" charset="utf-8">
+            let username = localStorage.getItem("username");
+            if (username?.trim() === "") window.location.href = "auth.html";
+            else document.getElementById("name").innerText = username;
+
+            const logout = () => {
+                localStorage.setItem("username", "");
+                window.location.href = "auth.html";
+            };
+        </script>
+    </body>
+</html>

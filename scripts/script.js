@@ -24,8 +24,8 @@ const validateData = () => {
         return (message.innerText = "please select your gender");
     }
 
-    window.location.href = "status.html";
     localStorage.setItem("username", username.value?.trim());
+    window.location.href = "index.html";
 };
 
 button.addEventListener("click", () => {
