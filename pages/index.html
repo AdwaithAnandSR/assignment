@@ -82,7 +82,7 @@
             </h1>
         </nav>
         <main>
-            <h1 style="color: #1c1c1c; font-size: 3rem">
+            <h1 style="color: #1c1c1c; font-size: 1.2rem">
                 Hey <span id="name"></span>💝
             </h1>
             <h1 id="welcome">Welcome to BlueOcean Hotel</h1>
@@ -148,7 +148,8 @@
         </footer>
         <script type="text/javascript" charset="utf-8">
             let username = localStorage.getItem("username");
-            if (username?.trim() === "") window.location.href = "auth.html";
+            if (!username || username?.trim() === "")
+                window.location.href = "auth.html";
             else document.getElementById("name").innerText = username;
 
             const logout = () => {

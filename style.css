@@ -1,13 +1,3 @@
-
-@media (max-width: 767px) {
-  body {
-
-    background: red;
-  }
-
-}
-
-
 * {
     padding: 0;
     margin: 0;
@@ -118,13 +108,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vw;
+    padding: 3vw;
 }
 
 nav a {
     all: unset;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #48f4ea;
     appearance: none;
     font-family: Monospace;
