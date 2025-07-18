@@ -14,10 +14,17 @@
         <main>
             <h1>Welcome to Our Website</h1>
             <p>This is the homepage of our simple HTML website.</p>
+
+            <button onclick="logout()" type="button">Log Out</button>
         </main>
         <script type="text/javascript" charset="utf-8">
             let username = localStorage.getItem("username");
             if (username?.trim() === "") window.location.href = "auth.html";
+
+            const logout = () => {
+                localStorage.setItem("username", "");
+                window.location.href = "auth.html";
+            };
         </script>
     </body>
 </html>

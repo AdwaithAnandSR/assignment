@@ -9,7 +9,7 @@ let other = document.getElementById("other");
 
 let existName = localStorage.getItem("username");
 
-if (!existName) window.location.href = "auth.html";
+
 
 const validateData = () => {
     message.style.color = "#a6f553";
