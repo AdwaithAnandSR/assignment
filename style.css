@@ -114,8 +114,8 @@ nav {
 nav a {
     all: unset;
     font-weight: bold;
-    font-size: 1.5rem;
-    color: #654951;
+    font-size: 3rem;
+    color: #ffffff;
     appearance: none;
     font-family: Monospace;
     -webkit-tap-highlight-color: transparent;
