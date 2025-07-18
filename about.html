@@ -16,4 +16,8 @@
             <p>We are a team dedicated to building simple websites.</p>
         </main>
     </body>
+        <script type="text/javascript" charset="utf-8">
+        let username = localStorage.getItem("username");
+        if (username?.trim() === "") window.location.href = "auth.html";
+    </script>
 </html>

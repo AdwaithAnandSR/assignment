@@ -17,4 +17,8 @@
             <p>Phone: +907 259 3711</p>
         </main>
     </body>
+    <script type="text/javascript" charset="utf-8">
+        let username = localStorage.getItem("username");
+        if (username?.trim() === "") window.location.href = "auth.html";
+    </script>
 </html>

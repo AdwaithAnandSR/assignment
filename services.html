@@ -21,5 +21,9 @@
                 <li>Service 5</li>
             </ul>
         </main>
+            <script type="text/javascript" charset="utf-8">
+        let username = localStorage.getItem("username");
+        if (username?.trim() === "") window.location.href = "auth.html";
+    </script>
     </body>
 </html>
