@@ -108,7 +108,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding: 5vw;
 }
 
 nav a {
@@ -142,7 +142,6 @@ ul {
 #galleryContainer div {
     width: 90%;
     height: 30vh;
-    background: green;
     border-radius: 23px;
     overflow: hidden;
 }
