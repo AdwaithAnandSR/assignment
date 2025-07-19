@@ -37,7 +37,7 @@
 
         <script type="text/javascript" charset="utf-8">
             let username = localStorage.getItem("username");
-            if (username?.trim() !== "") window.location.href = "index.html";
+            if (username && username?.trim() !== "") window.location.href = "index.html";
         </script>
         <script src="../scripts/script.js" type="module" charset="utf-8"></script>
     </body>
