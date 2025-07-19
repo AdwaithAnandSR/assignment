@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Hotel | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../style.css" />
         <style>
             body {
@@ -10,7 +9,10 @@
                 background-repeat: no-repeat;
                 background-position: top;
                 background-size: cover;
+                height: 100%;
+                overflow: hidden;
             }
+
             #welcome {
                 font-size: 3rem;
                 background: linear-gradient(#0dc176, #e45822, #c10d90);
@@ -32,39 +34,6 @@
             button:hover {
                 opacity: 0.9;
                 scale: 1.03;
-            }
-            footer {
-                padding: 0 5vw;
-                gap: 3vw;
-                display: flex;
-                white-space: nowrap;
-                overflow-x: auto;
-                margin-top: 3vh;
-            }
-            #box {
-                width: 40vw;
-                height: 20vh;
-                border-radius: 23px;
-                border: 1px solid white;
-                display: inline-block;
-                flex: 0 0 auto;
-                padding: 3vw;
-                overflow: hidden;
-                background: linear-gradient(
-                    to bottom right,
-                    #121212,
-                    #242424,
-                    #0d0d0d,
-                    #2f2f2f
-                );
-                background: transparent;
-            }
-            #box h1,
-            #box span {
-                text-align: center;
-                color: white;
-                white-space: normal;
-                margin: 1vh 0;
             }
         </style>
     </head>
