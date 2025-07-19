@@ -109,6 +109,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5vw 3vw;
+    gap: 3vw;
 }
 
 nav a {
