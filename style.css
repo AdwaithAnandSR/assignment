@@ -108,13 +108,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vw;
+    padding: 6vw;
 }
 
 nav a {
     all: unset;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 4vw;
     color: white;
     appearance: none;
     font-family: Monospace;

@@ -4,17 +4,17 @@
         <title>Hotel | Home</title>
         <link rel="stylesheet" href="../style.css" />
         <style>
+            html,
             body {
                 background-image: url("../images/img1.jpeg");
                 background-repeat: no-repeat;
                 background-position: top;
                 background-size: cover;
                 height: 100%;
-                overflow: hidden;
             }
 
             #welcome {
-                font-size: 3rem;
+                font-size: 10vw;
                 background: linear-gradient(#0dc176, #e45822, #c10d90);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -22,14 +22,17 @@
             }
             p {
                 color: #f9057e;
-                font-size: 1.3rem;
+                font-size: 5vw;
                 font-weight: bold;
             }
             button {
                 background: #05f997;
-                font-size: 1.3rem;
+                font-size: 6vw;
+                padding: 3vw;
                 position: absolute;
-                left: 0%;
+                border-radius: 3vw;
+                left: 0;
+                margin-top: 25vh;
             }
             button:hover {
                 opacity: 0.9;
@@ -47,7 +50,7 @@
                 style="
                     all: unset;
                     color: #fa1745;
-                    font-size: 1.3rem;
+                    font-size: 4vw;
                     font-weight: bold;
                 "
                 onclick="logout()"
@@ -56,7 +59,7 @@
             </button>
         </nav>
         <main>
-            <h1 style="color: #1c1c1c; font-size: 1.2rem">
+            <h1 style="color: #1c1c1c; font-size: 4vw">
                 Hey <span id="name"></span>💝
             </h1>
             <h1 id="welcome">Welcome to BlueOcean Hotel</h1>
