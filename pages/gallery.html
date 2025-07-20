@@ -121,7 +121,6 @@
             let username = localStorage.getItem("username");
             if (!username || username?.trim() === "")
                 window.location.href = "auth.html";
-            else document.getElementById("name").innerText = username;
 
             const logout = () => {
                 localStorage.setItem("username", "");

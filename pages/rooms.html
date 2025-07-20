@@ -26,11 +26,10 @@
             <p>Choose from deluxe, premium, and suite rooms.</p>
             <h1 style="color: #fa1745; margin-top: 3vh">Out Of Rooms !</h1>
         </main>
-        <script type="text/javascript" charset="utf-8">
+        <script>
             let username = localStorage.getItem("username");
             if (!username || username?.trim() === "")
                 window.location.href = "auth.html";
-            else document.getElementById("name").innerText = username;
 
             const logout = () => {
                 localStorage.setItem("username", "");
